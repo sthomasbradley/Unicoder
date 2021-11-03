@@ -1,88 +1,88 @@
 --------------------------------------------------------------
- UNICODER README
+ UNICODER README #2
 --------------------------------------------------------------
 Compatability
 ---------------------------------------------------------------
 
  1) MinGW   4) MSVC 17/19 7) Clang          10) Open Watcom
  2) MSYS    5) Cygwin     8) Digital Mars C 11) Embarcadero Dev-C++
- 3) MSYS2   6) LCC        9) Pelles C       12) Ubuntu GCC
+ 3) MSYS2   6) LCC        9) Pelles C       12) Ubuntu GCC (CodeBlocks)
                     | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |10 |11 |12 |
-std =               |c11|c11|c11| ? |c11|c99|c11|c99| ? |c94|c17|
-umode               |int|int|int|int|ptr|ptr|int|ptr|int|int|int|
-udispOn             | Y | Y | Y#| Y | Y | Y | Y | N | Y | Y | Y |
-udispOff            | Y | Y | N | Y | Y | N | Y | N | N | N | Y |
-scrnClr             | Y | Y | Y*| Y | Y | Y | Y | Y | Y | Y | Y |
-colors              | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-boldOn              | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-boldOff             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-underlineOn         | Y | N | Y | Y | Y | N | Y | N | N | Y | Y |
-underlineOff        | Y | - | Y | Y | Y | - | Y | - | - | Y | Y |
-reverseOn           | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-reverseOff          | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-formatOff           | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+std =               |c11|c11|c11| ? |c11|c99|c11|c99| ? |c94|c17|c17|
+umode               |int|int|int|int|ptr|ptr|int|ptr|int|int|int|ptr|
+udispOn             | Y | Y | Y#| Y | Y | Y | Y | N | Y | Y | Y | Y |
+udispOff            | Y | Y | N | Y | Y | N | Y | N | N | N | Y | N |
+scrnClr             | Y | Y | Y*| Y | Y | Y | Y | Y | Y | Y | Y | N |
+colors              | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+boldOn              | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+boldOff             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+underlineOn         | Y | N | Y | Y | Y | N | Y | N | N | Y | Y | Y |
+underlineOff        | Y | - | Y | Y | Y | - | Y | - | - | Y | Y | Y |
+reverseOn           | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+reverseOff          | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+formatOff           | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
 ---------------------------------------------------------------------
-thinlineDraw        | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-boldlineDraw        | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-dashlineDraw        | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-dbllineDraw         | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-rowDraw             | Y | Y | Y | Y | Y | Y | Y | N | Y | Y | Y |
+thinlineDraw        | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+boldlineDraw        | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+dashlineDraw        | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+dbllineDraw         | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+rowDraw             | Y | Y | Y | Y | Y | Y | Y | N | Y | Y | Y | Y |
 ---------------------------------------------------------------------
 string.h-like      
-wstrcpy             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrncpy            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrcat             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrncat            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrcmp             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrncmp            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrchr             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrrchr            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrspn             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrcspn            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrpbrk            | Y | Y } Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrwstr            | Y | Y } Y | y | Y | Y | Y | Y | Y | Y | Y |
-wstrlen             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wstrtok             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-strtowstr           | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrcpy             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrncpy            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrcat             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrncat            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrcmp             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrncmp            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrchr             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrrchr            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrspn             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrcspn            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrpbrk            | Y | Y } Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrwstr            | Y | Y } Y | y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrlen             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wstrtok             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+strtowstr           | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
 ---------------------------------------------------------------------
-wmemcpy             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | 
-wmemmove            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wmemcmp             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wmemchr             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
-wmemset             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wmemcpy             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wmemmove            | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wmemcmp             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wmemchr             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
+wmemset             | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y | Y |
 ---------------------------------------------------------------------
 stdlib.h-like
-watof               | Y | Y | Y | Y | Y | Y | Y | Y | N | ? | Y |
-watoi               | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y |
-watol               | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y |
+watof               | Y | Y | Y | Y | Y | Y | Y | Y | N | ? | Y | Y |
+watoi               | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y | Y |
+watol               | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y | Y |
 
-wstrtof             | Y | Y | Y | Y | Y | Y | Y | Y | Y | N | Y |
-wstrtod             | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y |
-wstrtol             | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y |
-wstrtoll            | Y | Y | Y | Y | Y | N } Y | Y | Y | ? | Y |
-wstrtoul            | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y |
-wstrtoull           | Y | Y | Y | Y | Y | N } Y | Y | Y | ? | Y |
+wstrtof             | Y | Y | Y | Y | Y | Y | Y | Y | Y | N | Y | Y |
+wstrtod             | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y | Y |
+wstrtol             | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y | Y |
+wstrtoll            | Y | Y | Y | Y | Y | N } Y | Y | Y | ? | Y | Y |
+wstrtoul            | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y | Y |
+wstrtoull           | Y | Y | Y | Y | Y | N } Y | Y | Y | ? | Y | Y |
 
-itowstr             | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y |
-ltowstr             | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y |
-ultowstr            | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y |
-lltowstr            | Y | Y | Y | Y | Y | Y | Y | N | Y | N | Y |
-ulltowstr           | Y | Y | Y | Y | Y | N } Y | N | Y | N | Y |
+itowstr             | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y | Y |
+ltowstr             | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y | Y |
+ultowstr            | Y | Y | Y | Y | Y | Y | Y | Y | Y | ? | Y | Y |
+lltowstr            | Y | Y | Y | Y | Y | Y | Y | N | Y | N | Y | Y |
+ulltowstr           | Y | Y | Y | Y | Y | N } Y | N | Y | N | Y | Y |
 ---------------------------------------------------------------------
 to_wstring(x) [Must be c11 compliant]
- char               | Y | Y | Y | N | Y | N | Y | N | Y | N | Y |
- signed char        | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- unsigned char      | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- int                | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- signed short       | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- unsigned short     | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- signed long        | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- unsigned long      | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- signed long long   | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- unsigned long long | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- float              | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- double             | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y |
- long double        | Y | Y | Y | N | Y | N | N | N | N | N | Y |
+ char               | Y | Y | Y | N | Y | N | Y | N | Y | N | Y | Y |
+ signed char        | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ unsigned char      | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ int                | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ signed short       | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ unsigned short     | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ signed long        | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ unsigned long      | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ signed long long   | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ unsigned long long | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ float              | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ double             | Y | Y | Y | Y | Y | N | Y | N | Y | N | Y | Y |
+ long double        | Y | Y | Y | N | Y | N | N | N | N | N | Y | Y |
 ---------------------------------------------------------------------
 
 ---------------------------------------------------------------------
